@@ -1,0 +1,134 @@
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+* {
+  color: #fff;
+  font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  box-sizing:border-box;
+}
+
+body {
+  font-size: 16px;
+  line-height: 1.4;
+  font-family: 'Open Sans', sans-serif;
+  background: black;
+  color: orange;
+}
+
+#root {
+  margin: 5rem;
+  margin-top: 1rem;
+}
+
+
+
+/* spinning ball */
+
+/* spinning ball */
+
+canvas{
+  display: block !important;
+  margin: 0 auto;
+  transform:rotate(45deg);
+  border-radius:50%;
+  box-shadow:20px 2px  40px #111;
+}
+
+#spinning-ball {
+}
+
+/* react soundcloud player */
+
+.player {
+  transition: color 125ms ease-in-out;
+  position: relative;
+  padding: 1.8rem;
+  z-index: 5;
+  font-size: 1.4rem;
+  display: flex;
+  align-items: center;
+}
+.player__control {
+  min-width: 6rem;
+  transition: fill 125ms ease-in-out;
+}
+.player__control__icon {
+  cursor: pointer;
+  display: inline-block;
+  margin-right: 0.4rem;
+}
+.player__control__icon svg {
+  fill: orange;
+}
+
+.player__control__icon--play {
+}
+.player__control__icon--pause {
+  fill: orange;
+}
+.player__track--active {
+  border-color: orange;
+  background: black;
+  z-index: 10;
+}
+.player__display {
+  flex: 1 1 100%;
+  margin-bottom: 0;
+}
+
+.player__display h4 {
+  display: none;
+}
+
+.player__progress {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  margin: 0;
+}
+.player__progress__position {
+  text-align: right;
+  font-feature-settings: tnum;
+}
+.player__progress__time {
+  font-size: 1.1rem;
+  letter-spacing: 0.1rem;
+  line-height: 1rem;
+  vertical-align: middle;
+}
+.player__progress__bar {
+  flex: 0 0 100%;
+  width: 100%;
+  display: block;
+  padding: 0.5rem 0;
+  margin: 0 0.5rem;
+}
+.player__progress__bar--container {
+  cursor: pointer;
+  display: block;
+  position: relative;
+  width: 100%;
+  height: .4rem;
+  border-radius: 2px;
+  overflow: hidden;
+  transform: translateZ(0);
+}
+.player__progress__bar--percent {
+  transition: transform .2s;
+  position: absolute;
+  width: 100%;
+  height: 4px;
+  background: orange;
+  display: block;
+  margin-left: -1px;
+}
+.player__progress__bar--progress {
+  background: orange;
+  opacity: 0.4;
+}

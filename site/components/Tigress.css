@@ -1,0 +1,21 @@
+.Projects {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.Title {
+  font-size: 32px;
+  color: orange;
+}
+
+.TitleContainer {
+  width: 100%;
+  padding: 10px;
+}
+
+.Card {
+  flex: 1 0 50%;
+  position: relative;
+  margin: 0 auto;
+  padding: 2rem;
+}

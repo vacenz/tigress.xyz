@@ -1,0 +1,9 @@
+.Audio {}
+
+/* sm (larger than 768px) */
+@media (min-width: 768px) {
+  .Audio {
+    position: absolute;
+    bottom: 0;
+  }
+}
